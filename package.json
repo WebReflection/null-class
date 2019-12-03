@@ -1,6 +1,6 @@
 {
   "name": "null-class",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A `Null` class to simplify `Object.create(null)` and `class extends null {}` patterns.",
   "main": "cjs/index.js",
   "module": "esm/index.js",
