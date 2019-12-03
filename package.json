@@ -18,5 +18,13 @@
     "null"
   ],
   "author": "Andrea Giammarchi",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/null-class.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebReflection/null-class/issues"
+  },
+  "homepage": "https://github.com/WebReflection/null-class#readme"
 }
