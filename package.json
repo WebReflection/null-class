@@ -1,0 +1,22 @@
+{
+  "name": "null-class",
+  "version": "0.0.0",
+  "description": "A `Null` class to simplify `Object.create(null)` and `class extends null {}` patterns.",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "unpkg": "index.js",
+  "scripts": {
+    "build": "npm run cjs && npm run esm && npm test",
+    "cjs": "cp index.js cjs/ && echo 'module.exports = Null;'>>cjs/index.js",
+    "esm": "cp index.js esm/ && echo 'export default Null;'>>esm/index.js",
+    "test": "node -e 'var Null=require(`./cjs`);if(Null instanceof Function||new Null instanceof Object)throw `error`'"
+  },
+  "keywords": [
+    "class",
+    "dictionary",
+    "extend",
+    "null"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "ISC"
+}
