@@ -1,5 +1,7 @@
 # null class
 
+[![Build Status](https://travis-ci.com/WebReflection/null-class.svg?branch=master)](https://travis-ci.com/WebReflection/null-class) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/null-class/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/null-class?branch=master)
+
 A `Null` class to simplify `Object.create(null)` and `class extends null {}` patterns.
 
 This module exports nothing else than:
