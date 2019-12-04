@@ -1,2 +1,2 @@
-function Null(){'use strict'}
+function Null(){}
 (Object.setPrototypeOf||Object)(Null,null).prototype=Object.create(null);

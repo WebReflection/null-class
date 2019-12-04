@@ -5,7 +5,7 @@ A `Null` class to simplify `Object.create(null)` and `class extends null {}` pat
 This module exports nothing else than:
 
 ```js
-function Null(){'use strict'}
+function Null(){}
 ```
 
 Before being exported though, such `Null` "_class_" is modified as such:
@@ -14,7 +14,7 @@ Object.setPrototypeOf(Null, null);
 Null.prototype = Object.create(null);
 ```
 
-Such `Null` class can be used to _extend_, as in `class extends Null {}`, or to create, faster than `Object.create(null)`, dictionaries of any kind, via `new Null`.
+The `Null` class can be used to _extend_, as in `class extends Null {}`, or to create, faster than `Object.create(null)`, dictionaries of any kind, via `new Null`.
 
 ### Compatibility
 

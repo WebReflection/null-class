@@ -9,7 +9,8 @@
     "build": "npm run cjs && npm run esm && npm test",
     "cjs": "cp index.js cjs/ && echo 'module.exports = Null;'>>cjs/index.js",
     "esm": "cp index.js esm/ && echo 'export default Null;'>>esm/index.js",
-    "test": "node -e 'var Null=require(`./cjs`);if(Null instanceof Function||new Null instanceof Object)throw `error`'"
+    "test": "nyc node ./test/index.js",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [
     "class",
@@ -26,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/WebReflection/null-class/issues"
   },
-  "homepage": "https://github.com/WebReflection/null-class#readme"
+  "homepage": "https://github.com/WebReflection/null-class#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.9",
+    "nyc": "^14.1.1"
+  }
 }
